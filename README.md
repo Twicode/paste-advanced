@@ -1,55 +1,55 @@
 # Paste Advanced
 
-Paste Advanced è una utility Windows (WPF) per la **copia avanzata di file e cartelle**.
+Paste Advanced is a Windows utility (WPF) for **advanced file and folder copying**.
 
-L'app permette di gestire sorgenti multiple (clipboard, drag & drop, pulsanti o Send To), applicare regole di copia e lanciare l'operazione con anteprima e conferma.
+The app lets you manage multiple sources (clipboard, drag & drop, buttons, or Send To), apply copy rules, and start the operation with preview and confirmation.
 
-## Funzionalità attualmente disponibili
+## Currently available features
 
-- **Solo struttura cartelle**
-- **Cartelle e file**
-- **Solo file (appiattito)**
-- **Preview** delle operazioni prima dell'esecuzione
-- **Conferma esecuzione** prima del run
-- **Undo ultima operazione** (quando disponibile)
-- Integrazione **Send To**
-- **Hotkey globale** per richiamare rapidamente il caricamento da clipboard
-- **Persistenza impostazioni principali**
-- **Localizzazione IT/EN**
-- Avvio con icona **tray** e riapertura rapida della finestra
+- **Folder structure only**
+- **Folders and files**
+- **Files only (flattened)**
+- **Preview** of operations before execution
+- **Execution confirmation** before running
+- **Undo last operation** (when available)
+- **Send To** integration
+- **Global hotkey** to quickly trigger clipboard loading
+- **Persistence of main settings**
+- **IT/EN localization**
+- Startup with **tray icon** and quick window reopen
 
 ## Download
 
-Paste Advanced è disponibile gratuitamente per Windows.
+Paste Advanced is available for free on Windows.
 
-Canali di distribuzione previsti:
+Distribution channels:
 - **Microsoft Store**
 - **GitHub Releases**
 
-> Inserisci qui i link reali quando saranno pronti.
+> Add the real links here when they are available.
 
-## Avvio rapido (sviluppo)
+## Quick start (development)
 
-1. Compila la soluzione:
+1. Build the solution:
    - `dotnet build PasteAdvanced.slnx`
-2. Avvia l'app:
+2. Run the app:
    - `dotnet run --project src/PasteAdvanced.App/PasteAdvanced.App.csproj`
 
-## Stato del progetto
+## Project status
 
-Questo README descrive lo stato reale della release corrente. Eventuali idee o funzionalità future non sono da considerarsi incluse finché non implementate e documentate esplicitamente.
+This README describes the actual state of the current release. Any future ideas or features should not be considered included unless they are explicitly implemented and documented.
 
 ## Privacy
 
-Paste Advanced è progettata come utility locale per Windows.
+Paste Advanced is designed as a local Windows utility.
 
-Una privacy policy separata sarà disponibile nel repository e/o sul sito ufficiale.
+A separate privacy policy is available in the repository and/or on the official website.
 
 ## Publisher / Author
 
-**Publisher:** Twicode
+**Publisher:** Twicode  
 **Created by:** Marco Rubens Tantino
 
 ## License
 
-Il codice sorgente e/o i binari di Paste Advanced sono distribuiti secondo i termini indicati nel file `LICENSE` del repository.
+The source code and/or binaries of Paste Advanced are distributed under the terms specified in the `LICENSE` file in this repository.
