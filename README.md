@@ -22,23 +22,18 @@ The app lets you manage multiple sources (clipboard, drag & drop, buttons, or Se
 
 Paste Advanced is available for free on Windows.
 
-- **Microsoft Store:** [Coming soon](STORE_LINK)
+- **Microsoft Store:** Coming soon
 - **GitHub Releases:** [Latest release](https://github.com/Twicode/paste-advanced/releases/latest)
 
-## Quick start (development)
+## Installation
 
-1. Build the solution:
-   - `dotnet build PasteAdvanced.slnx`
-2. Run the app:
-   - `dotnet run --project src/PasteAdvanced.App/PasteAdvanced.App.csproj`
+If you download Paste Advanced from GitHub Releases, extract the archive and follow the included installation steps.
 
 ## Project status
 
 This README describes the actual state of the current release. Any future ideas or features should not be considered included unless they are explicitly implemented and documented.
 
 ## Privacy
-
-Paste Advanced is designed as a local Windows utility.
 
 A separate privacy policy is available in the repository and/or on the official website.
 
@@ -49,4 +44,4 @@ A separate privacy policy is available in the repository and/or on the official 
 
 ## License
 
-The source code and/or binaries of Paste Advanced are distributed under the terms specified in the `LICENSE` file in this repository.
+The binaries and/or accompanying materials of Paste Advanced are distributed under the terms specified in the `LICENSE` file in this repository.
