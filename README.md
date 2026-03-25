@@ -22,11 +22,8 @@ The app lets you manage multiple sources (clipboard, drag & drop, buttons, or Se
 
 Paste Advanced is available for free on Windows.
 
-Distribution channels:
-- **Microsoft Store**
-- **GitHub Releases**
-
-> Add the real links here when they are available.
+- **Microsoft Store:** [Coming soon](STORE_LINK)
+- **GitHub Releases:** [Latest release](https://github.com/Twicode/paste-advanced/releases/latest)
 
 ## Quick start (development)
 
