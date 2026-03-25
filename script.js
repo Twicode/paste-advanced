@@ -48,16 +48,14 @@ const translations = {
     faq4_a: "Yes. The preview shows operations, skipped items, and other useful details before execution.",
     download_label: "Download",
     download_title: "Download Paste Advanced for Windows",
-    download_text: "Replace the buttons below with your real Microsoft Store and GitHub Releases links.",
+    download_text: "Download Paste Advanced from GitHub Releases or get it from Microsoft Store when available.",
     download_store: "Microsoft Store",
     download_github: "GitHub Releases",
-    download_note: "Current version: replace this text with your version number.",
-    footer_text: "Windows utility for advanced file copy workflows."
+    download_note: "Current version: 1.0.0",
+    footer_text: "Windows utility for advanced file copy workflows.",
     footer_privacy: "Privacy Policy",
     footer_github: "GitHub Releases",
-    footer_store: "Microsoft Store",
-    download_text: "Download Paste Advanced from GitHub Releases or get it from Microsoft Store when available.",
-    download_note: "Current version: 1.0.0",
+    footer_store: "Microsoft Store"
   },
   it: {
     nav_download: "Scarica",
@@ -108,16 +106,14 @@ const translations = {
     faq4_a: "Sì. La preview mostra operazioni, elementi saltati e altri dettagli utili prima dell'esecuzione.",
     download_label: "Download",
     download_title: "Scarica Paste Advanced per Windows",
-    download_text: "Sostituisci i pulsanti qui sotto con i link reali al Microsoft Store e a GitHub Releases.",
+    download_text: "Scarica Paste Advanced da GitHub Releases oppure ottienilo da Microsoft Store quando disponibile.",
     download_store: "Microsoft Store",
     download_github: "GitHub Releases",
-    download_note: "Versione attuale: sostituisci questo testo con il numero di versione.",
-    footer_text: "Utility Windows per workflow avanzati di copia file."
+    download_note: "Versione corrente: 1.0.0",
+    footer_text: "Utility Windows per workflow avanzati di copia file.",
     footer_privacy: "Informativa sulla privacy",
     footer_github: "GitHub Releases",
-    footer_store: "Microsoft Store",
-    download_text: "Scarica Paste Advanced da GitHub Releases oppure ottienilo da Microsoft Store quando disponibile.",
-    download_note: "Versione corrente: 1.0.0",
+    footer_store: "Microsoft Store"
   }
 };
 
