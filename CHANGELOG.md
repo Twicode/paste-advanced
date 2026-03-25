@@ -1,0 +1,27 @@
+# Changelog
+
+All notable changes to Paste Advanced will be documented in this file.
+
+## [1.0.0] - 2026-03-25
+
+### Added
+- Initial public release structure
+- Advanced copy modes:
+  - Folder structure only
+  - Folders and files
+  - Files flattened
+- Operation preview before execution
+- Execution confirmation flow
+- Undo last operation support
+- Send To integration
+- Global hotkey support
+- Settings persistence
+- Italian and English UI localization
+- Tray startup / quick reopen behavior
+
+### Changed
+- Improved Send To behavior so incoming paths can be appended to existing sources instead of replacing them
+
+### Notes
+- This is an early public release focused on the core file operation workflow
+- Additional features may be added in future releases
