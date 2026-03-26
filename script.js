@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_text: "Windows utility for advanced file copy workflows.",
       footer_privacy: "Privacy Policy",
       footer_github: "GitHub Releases",
-      footer_store: "Microsoft Store"
+      footer_store: "Microsoft Store",
+      footer_twicode: "Twicode",
     },
     it: {
       nav_download: "Scarica",
@@ -114,7 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_text: "Utility Windows per workflow avanzati di copia file.",
       footer_privacy: "Informativa sulla privacy",
       footer_github: "GitHub Releases",
-      footer_store: "Microsoft Store"
+      footer_store: "Microsoft Store",
+      footer_twicode: "Twicode",
     }
   };
 
@@ -173,3 +175,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTranslations(initialLang);
 });
+
