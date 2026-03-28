@@ -44,10 +44,10 @@
           </div>
           <p class="hero-note" data-i18n="hero_note">Free. Built for Windows. Focused on practical file operations.</p>
         </div>
-    
-        <div class="hero-card hero-screenshot-card">
+            
+        <button class="hero-card hero-screenshot-card screenshot-trigger" type="button" data-full-image="assets/screens/en/03-live-preview.png" data-image-kind="hero" aria-label="Open screenshot">
           <img id="hero-shot" src="assets/screens/en/03-live-preview.png" alt="Paste Advanced live preview" class="hero-screenshot-img">
-        </div>
+        </button>
       </div>
     </section>
 
@@ -126,14 +126,18 @@
           </div>
       
           <div class="screenshots-grid">
-            <div class="screenshot-card screenshot-large">
-              <img id="shot-1" src="assets/screens/en/01-main.png" alt="Paste Advanced main window" class="screenshot-img">
-            </div>
-            <div class="screenshot-card">
-              <img id="shot-2" src="assets/screens/en/02-settings.png" alt="Paste Advanced settings panel" class="screenshot-img">
-            </div>
-            <div class="screenshot-card">
-              <img id="shot-3" src="assets/screens/en/04-filters.png" alt="Paste Advanced filters" class="screenshot-img">
+            <div class="screenshots-grid">
+              <button class="screenshot-card screenshot-trigger" type="button" data-full-image="assets/screens/en/01-main.png" data-image-kind="shot1" aria-label="Open screenshot">
+                <img id="shot-1" src="assets/screens/en/01-main.png" alt="Paste Advanced main window" class="screenshot-img">
+              </button>
+            
+              <button class="screenshot-card screenshot-trigger" type="button" data-full-image="assets/screens/en/02-settings.png" data-image-kind="shot2" aria-label="Open screenshot">
+                <img id="shot-2" src="assets/screens/en/02-settings.png" alt="Paste Advanced settings panel" class="screenshot-img">
+              </button>
+            
+              <button class="screenshot-card screenshot-trigger" type="button" data-full-image="assets/screens/en/04-filters.png" data-image-kind="shot3" aria-label="Open screenshot">
+                <img id="shot-3" src="assets/screens/en/04-filters.png" alt="Paste Advanced filters" class="screenshot-img">
+              </button>
             </div>
           </div>
         </div>
@@ -200,8 +204,16 @@
       </nav>
     </div>
   </footer>
-
+  
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox-backdrop" data-close-lightbox="true"></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+      <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close preview">×</button>
+      <img id="lightbox-image" src="" alt="" class="lightbox-image">
+    </div>
+  </div>
+  
   <script src="script.js"></script>
-</body>
+  </body>
 </html>
 
