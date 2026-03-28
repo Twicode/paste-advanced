@@ -395,7 +395,7 @@ img {
 
 .screenshot-trigger {
   padding: 0;
-  cursor: zoom-in;
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   background: rgba(255, 255, 255, 0.04);
@@ -409,7 +409,7 @@ img {
 }
 
 .hero-screenshot-card.screenshot-trigger {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .lightbox[hidden] {
