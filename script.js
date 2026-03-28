@@ -115,6 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const enBtn = document.getElementById("lang-en");
   const yearEl = document.getElementById("year");
 
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxClose = document.getElementById("lightbox-close");
+    
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
@@ -150,6 +154,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (shot1) shot1.src = shots.shot1;
     if (shot2) shot2.src = shots.shot2;
     if (shot3) shot3.src = shots.shot3;
+
+    const triggers = document.querySelectorAll(".screenshot-trigger");
+    triggers.forEach((trigger) => {
+      const kind = trigger.dataset.imageKind;
+      if (kind && shots[kind]) {
+        trigger.dataset.fullImage = shots[kind];
+      }
+    });
         
     const dict = translations[lang] || translations.en;
 
@@ -190,6 +202,52 @@ document.addEventListener("DOMContentLoaded", () => {
     enBtn.addEventListener("click", () => applyTranslations("en"));
   }
 
+  function openLightbox(src, altText = "") {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = altText;
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+  
+  function closeLightbox() {
+    if (!lightbox || !lightboxImage) return;
+    lightbox.hidden = true;
+    lightboxImage.src = "";
+    lightboxImage.alt = "";
+    document.body.style.overflow = "";
+  }
+  
+  document.querySelectorAll(".screenshot-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const img = trigger.querySelector("img");
+      const src = trigger.dataset.fullImage || (img ? img.src : "");
+      const altText = img ? img.alt : "Screenshot";
+      if (src) {
+        openLightbox(src, altText);
+      }
+    });
+  });
+  
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+  }
+  
+  if (lightbox) {
+    lightbox.addEventListener("click", (event) => {
+      const target = event.target;
+      if (target instanceof HTMLElement && target.dataset.closeLightbox === "true") {
+        closeLightbox();
+      }
+    });
+  }
+  
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+    
   applyTranslations(initialLang);
 });
 
