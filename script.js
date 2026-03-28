@@ -134,6 +134,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const initialLang = savedLang || browserLang || "en";
 
   function applyTranslations(lang) {
+    const screenshotMap = {
+      en: {
+        shot1: "assets/screens/en/01-main.png",
+        shot2: "assets/screens/en/03-live-preview.png",
+        shot3: "assets/screens/en/02-settings.png",
+        shot4: "assets/screens/en/04-filters.png"
+      },
+      it: {
+        shot1: "assets/screens/it/01-main.png",
+        shot2: "assets/screens/it/03-live-preview.png",
+        shot3: "assets/screens/it/02-settings.png",
+        shot4: "assets/screens/it/04-filters.png"
+      }
+    };
+    
+    const shots = screenshotMap[lang] || screenshotMap.en;
+    
+    const shot1 = document.getElementById("shot-1");
+    const shot2 = document.getElementById("shot-2");
+    const shot3 = document.getElementById("shot-3");
+    const shot4 = document.getElementById("shot-4");
+    
+    if (shot1) shot1.src = shots.shot1;
+    if (shot2) shot2.src = shots.shot2;
+    if (shot3) shot3.src = shots.shot3;
+    if (shot4) shot4.src = shots.shot4;
+        
     const dict = translations[lang] || translations.en;
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
