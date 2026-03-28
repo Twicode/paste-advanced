@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_cta_primary: "Download",
       hero_cta_secondary: "Explore features",
       hero_note: "Free. Built for Windows. Focused on practical file operations.",
-      mock_sources: "Sources",
-      mock_preview: "Preview",
       usecases_label: "Use cases",
       usecases_title: "Built for tasks that File Explorer handles poorly or not clearly enough.",
       usecase1_title: "Folder structure only",
@@ -33,10 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       feature6_title: "Undo last operation",
       feature6_text: "Roll back the last execution when supported by the operation journal.",
       screens_label: "Screenshots",
-      screens_title: "Replace these placeholders with real screenshots of your app.",
-      shot1: "Main window screenshot",
-      shot2: "Preview / right panel screenshot",
-      shot3: "Settings or Send To workflow screenshot",
+      screens_title: "See the main workflows and controls of Paste Advanced.",
       faq_label: "FAQ",
       faq_title: "A few useful answers before downloading.",
       faq1_q: "Is Paste Advanced free?",
@@ -67,8 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hero_cta_primary: "Scarica",
       hero_cta_secondary: "Scopri le funzioni",
       hero_note: "Gratis. Pensata per Windows. Focalizzata su operazioni pratiche su file e cartelle.",
-      mock_sources: "Sorgenti",
-      mock_preview: "Anteprima",
       usecases_label: "Casi d'uso",
       usecases_title: "Pensata per attività che Esplora File gestisce male o in modo poco chiaro.",
       usecase1_title: "Solo struttura cartelle",
@@ -92,10 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       feature6_title: "Undo ultima operazione",
       feature6_text: "Annulla l'ultima esecuzione quando supportata dal journal dell'operazione.",
       screens_label: "Screenshot",
-      screens_title: "Sostituisci questi placeholder con screenshot reali della tua app.",
-      shot1: "Screenshot finestra principale",
-      shot2: "Screenshot anteprima / pannello destro",
-      shot3: "Screenshot settings oppure flusso Send To",
+      screens_title: "Guarda i flussi principali e i controlli di Paste Advanced.",
       faq_label: "FAQ",
       faq_title: "Qualche risposta utile prima del download.",
       faq1_q: "Paste Advanced è gratis?",
@@ -136,30 +126,30 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyTranslations(lang) {
     const screenshotMap = {
       en: {
+        hero: "assets/screens/en/03-live-preview.png",
         shot1: "assets/screens/en/01-main.png",
-        shot2: "assets/screens/en/03-live-preview.png",
-        shot3: "assets/screens/en/02-settings.png",
-        shot4: "assets/screens/en/04-filters.png"
+        shot2: "assets/screens/en/02-settings.png",
+        shot3: "assets/screens/en/04-filters.png"
       },
       it: {
+        hero: "assets/screens/it/03-live-preview.png",
         shot1: "assets/screens/it/01-main.png",
-        shot2: "assets/screens/it/03-live-preview.png",
-        shot3: "assets/screens/it/02-settings.png",
-        shot4: "assets/screens/it/04-filters.png"
+        shot2: "assets/screens/it/02-settings.png",
+        shot3: "assets/screens/it/04-filters.png"
       }
     };
     
     const shots = screenshotMap[lang] || screenshotMap.en;
     
+    const heroShot = document.getElementById("hero-shot");
     const shot1 = document.getElementById("shot-1");
     const shot2 = document.getElementById("shot-2");
     const shot3 = document.getElementById("shot-3");
-    const shot4 = document.getElementById("shot-4");
     
+    if (heroShot) heroShot.src = shots.hero;
     if (shot1) shot1.src = shots.shot1;
     if (shot2) shot2.src = shots.shot2;
     if (shot3) shot3.src = shots.shot3;
-    if (shot4) shot4.src = shots.shot4;
         
     const dict = translations[lang] || translations.en;
 
