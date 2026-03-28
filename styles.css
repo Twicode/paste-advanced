@@ -222,7 +222,7 @@ img {
   display: grid;
   grid-template-columns: 1.35fr 1fr 1fr;
   gap: 18px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .screenshot-card {
@@ -233,15 +233,10 @@ img {
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
 }
 
-.screenshot-large {
-  min-height: 100%;
-}
-
 .screenshot-img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .section {
