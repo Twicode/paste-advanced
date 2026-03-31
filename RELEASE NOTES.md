@@ -1,4 +1,4 @@
-## Paste Advanced 1.0.0
+## Paste Advanced 1.0.1
 
 First public release of Paste Advanced.
 
