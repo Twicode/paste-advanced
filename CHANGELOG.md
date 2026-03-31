@@ -2,6 +2,12 @@
 
 All notable changes to Paste Advanced will be documented in this file.
 
+## [1.0.1] - 2026-04-01
+- Improved localization with support for Italian and English
+- Enhanced the preview and execution confirmation experience
+- Added new settings for Windows integration and app behavior
+- General improvements to stability, message clarity, and usability
+
 ## [1.0.0] - 2026-03-25
 
 ### Added
