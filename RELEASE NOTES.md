@@ -1,18 +1,13 @@
-## Paste Advanced 1.0.1
+## Paste Advanced 1.0.2
 
-First public release of Paste Advanced.
+Update focused on usability, polish, and update visibility.
 
 ### Included
-- Folder structure only
-- Folders and files
-- Files flattened
-- Preview before execution
-- Undo last operation
-- Send To integration
-- Global hotkey
-- Saved preferences
-- IT/EN localization
-- Tray support
+- In-app update availability banner
+- Quick links to Microsoft Store and GitHub Releases
+- Improved main window restore behavior after monitor changes
+- UI refinements for the update banner and source action buttons
+- Existing core features: preview, undo, Send To integration, hotkey, saved preferences, IT/EN localization, tray support
 
 ### Notes
-This release focuses on the core workflow for advanced file and folder copy operations on Windows.
+This release improves update discoverability and overall UI polish while keeping the core Paste Advanced workflow unchanged.

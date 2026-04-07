@@ -2,6 +2,12 @@
 
 All notable changes to Paste Advanced will be documented in this file.
 
+## [1.0.2] - 2026-04-08
+- Added in-app update availability detection with a compact update banner
+- Added quick links to Microsoft Store and GitHub Releases from the update banner
+- Improved main window recovery when reopening after monitor configuration changes
+- Refined UI polish for the update banner and source action buttons
+
 ## [1.0.1] - 2026-04-01
 - Improved localization with support for Italian and English
 - Enhanced the preview and execution confirmation experience
