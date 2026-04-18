@@ -11,3 +11,9 @@ Update focused on usability, polish, and update visibility.
 
 ### Notes
 This release improves update discoverability and overall UI polish while keeping the core Paste Advanced workflow unchanged.
+
+### Links
+
+- Microsoft Store: https://apps.microsoft.com/detail/9P23MJMXG52P
+- Product page: https://twicode.github.io/paste-advanced/
+- Publisher page: https://twicode.github.io/
